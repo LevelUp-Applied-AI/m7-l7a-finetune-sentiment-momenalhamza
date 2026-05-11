@@ -1,0 +1,13 @@
+text,label,predicted_label,predicted_probability,prob_negative,prob_neutral,prob_positive
+kills the tree even though i'm only in the app.,negative,negative,0.7924026250839233,0.7924026,0.0986423,0.10895509
+cannot open it any more,negative,negative,0.8365759253501892,0.8365759,0.1135071,0.04991693
+i think tim needs to get an ipad if he's complaining about a doc with <number> 's of pages on his phone? clean the cobwebs out of your wallet!,neutral,negative,0.6534144282341003,0.6534144,0.09922262,0.24736297
+good apps for photo editing,positive,positive,0.8910545110702515,0.0729481,0.035997357,0.8910545
+i will use the app but only in the <url> let's <url> hope this helps,neutral,neutral,0.43899425864219666,0.25535953,0.43899426,0.3056462
+very useful to book hotels,positive,positive,0.8201422691345215,0.082433544,0.09742417,0.82014227
+"it would be cooler if you could mix and match the pants, shoes, shirts, jackets, etc. instead of having to choose from predetermined outfits. i want to make my own outfit!",positive,positive,0.893622636795044,0.06919011,0.03718724,0.89362264
+"love being able to edit the raw photos my galaxy s <number> edge takes. much more convenient to edit on phone then in desktop lightroom. only problem i have is raw photos don't show up in app right away, seems i have to restart the phone for them to index, force closing the app and reopening doesn't work.",positive,negative,0.5209510922431946,0.5209511,0.20775215,0.27129674
+way too many advertisements,positive,negative,0.688040554523468,0.68804055,0.11314106,0.19881833
+needs graduated filter/local adjustment asap!,neutral,neutral,0.4569897949695587,0.4551753,0.4569898,0.08783489
+"there is no way to search or jump to the pages i want. so, in a <number> page document, i have to page down until i get to where i want. very poor!",neutral,negative,0.5017344951629639,0.5017345,0.33216202,0.16610345
+it's better than the other photo editors,neutral,positive,0.7483569383621216,0.12834808,0.12329506,0.74835694
