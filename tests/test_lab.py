@@ -68,9 +68,9 @@ def test_make_training_args_attributes():
     # logging cadence to every ~50 steps. The eval_strategy attribute is named
     # eval_strategy (not evaluation_strategy) in transformers>=4.41 — the
     # course pins that range in requirements.txt.
-    assert args.eval_strategy == "epoch", \
+    assert str(args.eval_strategy) == "epoch", \
         f"eval_strategy must be 'epoch' (got {args.eval_strategy!r})"
-    assert args.save_strategy == "epoch", \
+    assert str(args.save_strategy) == "epoch", \
         f"save_strategy must be 'epoch' (got {args.save_strategy!r})"
     assert args.logging_steps == 50, \
         f"logging_steps must be 50 (got {args.logging_steps})"

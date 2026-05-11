@@ -1,19 +1,19 @@
 {
-  "accuracy": 0.5833333333333334,
-  "macro_f1": 0.5793650793650794,
+  "accuracy": 0.5933110367892976,
+  "macro_f1": 0.594940496884079,
   "per_class_f1": {
-    "negative": 0.5,
-    "neutral": 0.5714285714285714,
+    "negative": 0.6548117154811716,
+    "neutral": 0.4633431085043988,
     "positive": 0.6666666666666666
   },
   "per_class_precision": {
-    "negative": 0.3333333333333333,
-    "neutral": 1.0,
-    "positive": 0.75
+    "negative": 0.6849015317286652,
+    "neutral": 0.4232142857142857,
+    "positive": 0.7050209205020921
   },
   "per_class_recall": {
-    "negative": 1.0,
-    "neutral": 0.4,
-    "positive": 0.6
+    "negative": 0.627254509018036,
+    "neutral": 0.5118790496760259,
+    "positive": 0.6322701688555347
   }
 }
