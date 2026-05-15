@@ -1,0 +1,34 @@
+id,hypothesis_category,text,expected_label,rationale,predicted_label,predicted_probability,correct
+1,negation,The latest update did not improve battery life at all.,negative,Tests whether the model picks up the negation cue or just the trigger word 'improve',negative,0.6989335417747498,True
+2,lexical_trigger,This app is no longer reliable on my phone.,negative,Strong positive cue 'reliable' negated by 'no longer'; tests cue-vs-context handling,negative,0.8602973222732544,True
+3,domain_shift,The team won the championship final last weekend.,neutral,Sports content unrelated to app-review training; tests domain-shift robustness,neutral,0.45559820532798767,True
+4,negation,The service was not bad at all.,positive,Double negation ('not bad') should result in a positive sentiment.,negative,0.60365891456604,False
+5,negation,I can't say I disliked the interface.,positive,Complex negation ('can't say I disliked') should be positive.,negative,0.5304051637649536,False
+6,negation,It failed to meet even the lowest expectations.,negative,Negation via 'failed to' with a positive-ish word 'meet'.,negative,0.6835507154464722,True
+7,negation,The app didn't stop crashing until I reinstalled it.,negative,Negation of 'stop crashing' tests if it sees the ongoing failure.,negative,0.7126434445381165,True
+8,negation,I wouldn't call this app user-friendly.,negative,Explicit negation of a strong positive trait.,negative,0.8168467283248901,True
+9,lexical_trigger,This is a masterpiece of bugs and crashes.,negative,Uses 'masterpiece' (positive) in a negative context.,negative,0.5986204147338867,True
+10,lexical_trigger,The support team is remarkably slow.,negative,'Remarkably' (often positive) used to intensify a negative trait.,neutral,0.4472220242023468,False
+11,lexical_trigger,I have a great deal of trouble with the login.,negative,'Great' (positive) used as a quantifier for 'trouble'.,neutral,0.43484801054000854,False
+12,lexical_trigger,It's a wonderful way to waste your time.,negative,'Wonderful' (positive) used sarcastically to describe a negative outcome.,positive,0.7549514770507812,False
+13,lexical_trigger,The design is beautiful but the functionality is non-existent.,negative,Positive trigger 'beautiful' contrasted with fatal flaw.,positive,0.6128995418548584,False
+14,domain_shift,Add two eggs and whisk until fluffy.,neutral,Recipe domain; tests if neutral content is misclassified.,positive,0.46781572699546814,False
+15,domain_shift,The stock market saw a sharp decline today.,neutral,Finance domain; checks for bias towards negative labels in news-like text.,neutral,0.45540156960487366,True
+16,domain_shift,The defendant pleaded not guilty to all charges.,neutral,Legal domain; checks if 'not guilty' (positive-ish) or 'charges' (negative-ish) dominates.,negative,0.48851707577705383,False
+17,domain_shift,Jupiter is the largest planet in our solar system.,neutral,Scientific fact; should be strictly neutral.,neutral,0.40191447734832764,True
+18,domain_shift,He scored a goal in the final minute of the match.,neutral,Sports domain; checks for domain robustness.,negative,0.4152786135673523,False
+19,length_extreme,Terrible.,negative,Extremely short negative review.,negative,0.8185165524482727,True
+20,length_extreme,Good.,positive,Extremely short positive review.,positive,0.8224143385887146,True
+21,length_extreme,Meh.,neutral,Extremely short neutral review.,negative,0.8191131353378296,False
+22,length_extreme,A very long sentence repeating the same positive sentiment over and over again to see if the model gets lost in the noise of a hundred words that all mean the same thing but are just phrased slightly differently.,positive,Tests if length dilutes the sentiment signal.,neutral,0.6505553126335144,False
+23,length_extreme,This app is quite literally the most frustrating piece of software I have ever had the misfortune of installing on any device I have ever owned in my entire life which spans several decades of using computers and mobile phones of all kinds.,negative,Tests if long-winded frustration is captured.,negative,0.44610151648521423,True
+24,sarcasm,Oh great another update that breaks everything.,negative,Sarcastic use of 'great' to express frustration.,positive,0.8339241147041321,False
+25,sarcasm,I love how the app deletes my data without asking.,negative,Sarcastic use of 'love' for a data loss event.,positive,0.7254738807678223,False
+26,sarcasm,Thanks for the useless notification at 3 AM.,negative,Sarcastic 'thanks' for a negative experience.,positive,0.4395132064819336,False
+27,sarcasm,Exactly what I needed a high-priced subscription for basic features.,negative,Sarcastic 'exactly what I needed'.,positive,0.5370294451713562,False
+28,sarcasm,Brilliant work making the UI even more confusing than before.,negative,Sarcastic 'brilliant work'.,positive,0.6982280611991882,False
+29,other,This app is totaly useles.,negative,"Misspelled words ('totaly', 'useles') test spelling robustness.",positive,0.4260217249393463,False
+30,other,The best worst app ever.,negative,Oxymoron/Irony testing.,negative,0.8556772470474243,True
+31,other,I'm so hapy it finally works after 50 tries.,positive,Positive sentiment with misspelling and context of prior failure.,positive,0.5540816783905029,True
+32,other,5/5 stars for the bugs.,negative,Numerical rating logic used sarcastically in text.,positive,0.381793737411499,False
+33,other,The app is okay but could be better.,neutral,Mixed sentiment leaning towards neutral.,positive,0.8311761021614075,False
